@@ -3,10 +3,11 @@ var counter=0;
 
 function processGuess() {
 	counter++;
+    var messageRef=document.getElementById("message");
+    var guessesRef=document.getElementById("number_guesses");
     var valueString=document.getElementById("guessInput").value;
     var guess=parseInt(valueString);
-    var messageRef=document.getElementById("message");
-	var guessesRef=document.getElementById("number_guesses");
+
 	guessesRef.innerHTML="Antal gissningar: "+counter;
     messageRef.innerHTML="Du har gissat";
     if(guess<randomNumber) {
@@ -23,4 +24,12 @@ function processGuess() {
     
     randomNumber=parseInt(randomNumber);
     console.log(randomNumber);
+}
+
+function reset() {
+    counter=0;
+    var messageRef=document.getElementById("message");
+    messageRef.innerHTML="Du har inte gjort någon gissning";
+    var guessesRef=document.getElementById("number_guesses");
+    guessesRef.innerHTML="Antal gissningar: 0";
 }
