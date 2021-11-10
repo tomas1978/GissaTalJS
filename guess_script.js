@@ -3,7 +3,7 @@ var counter=0;
 
 function processGuess() {
 	counter++;
-    var messageRef=document.getElementById("message");
+    var messageRef=document.getElementById("message_ref");
     var guessesRef=document.getElementById("number_guesses");
     var valueString=document.getElementById("guessInput").value;
     var guess=parseInt(valueString);
