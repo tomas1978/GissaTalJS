@@ -32,4 +32,5 @@ function reset() {
     messageRef.innerHTML="Du har inte gjort någon gissning";
     var guessesRef=document.getElementById("number_guesses");
     guessesRef.innerHTML="Antal gissningar: 0";
+	guessesRef.innerHTML="Du har inte gjort någon gissning";
 }
