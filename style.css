@@ -6,6 +6,7 @@ body{
 h1 {
     font-size: 32px;
 	font-style: bold;
+	font-family: sans-serif;
 }
 
 p {
