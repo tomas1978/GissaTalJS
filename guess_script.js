@@ -16,9 +16,12 @@ function processGuess() {
     else if(guess>randomNumber) {
         messageRef.innerHTML="Din gissing är för hög";
     }
-    else {
+    else if(guess==randomNumber){
         messageRef.innerHTML="Bra gjort! Du gissade rätt tal!";
     }
+	else {
+		messageRef.innerHTML="Felaktig gissning! Du måste skriva ett heltal!";
+	}
 
     console.log(valueString);
     
