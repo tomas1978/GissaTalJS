@@ -31,7 +31,7 @@ function processGuess() {
 
 function reset() {
     counter=0;
-    var messageRef=document.getElementById("message");
+    var messageRef=document.getElementById("message_ref");
     messageRef.innerHTML="Du har inte gjort någon gissning";
     var guessesRef=document.getElementById("number_guesses");
     guessesRef.innerHTML="Antal gissningar: 0";
