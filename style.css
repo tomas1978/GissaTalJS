@@ -20,6 +20,7 @@ button {
 	font-size: 30px;
     background-color: lightseagreen;
 	padding: 15px 15px 20px 20px;
+	font-family: sans-serif;
 }
 
 input {
