@@ -1,13 +1,13 @@
 body{
 	margin: 60px 40px 10px 10px;
 	background-color: lightgrey;
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 h1 {
     font-size: 32px;
 	font-style: bold;
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 p {
