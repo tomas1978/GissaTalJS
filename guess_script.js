@@ -10,7 +10,9 @@ function processGuess() {
 
 	guessesRef.innerHTML="Antal gissningar: "+counter;
     messageRef.innerHTML="Du har gissat";
-    if(guess<randomNumber) {
+    
+	randomNumber=parseInt(randomNumber);
+	if(guess<randomNumber) {
         messageRef.innerHTML="Din gissning är för låg";
     }
     else if(guess>randomNumber) {
@@ -22,11 +24,6 @@ function processGuess() {
 	else {
 		messageRef.innerHTML="Felaktig gissning! Du måste skriva ett heltal!";
 	}
-
-    console.log(valueString);
-    
-    randomNumber=parseInt(randomNumber);
-    console.log(randomNumber);
 }
 
 function reset() {
